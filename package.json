@@ -16,7 +16,7 @@
         "lint-fix": "tslint --fix -c tslint.json -p tsconfig.lint.json"
     },
     "dependencies": {
-        "ahpaa-core": "0.2.0",
+        "amerykahospital-personalizedadvices-core": "1.0.0",
         "firebase": "^6.3.0",
         "firebaseui": "^4.0.0",
         "ow": "^0.13.2"
