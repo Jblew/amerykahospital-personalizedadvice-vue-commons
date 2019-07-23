@@ -4,7 +4,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import firebaseui from "firebaseui";
 
-import { FirestoreCollections, FIREBASE_CONFIG } from "amerykahospital-personalizedadvices-core";
+import { FirestoreCollections, FIREBASE_CONFIG } from "amerykahospital-personalizedadvice-core";
 
 export class FirebaseAuthHelper {
     public static initialize(opts: FirebaseAuthHelper.InitializeOptions) {

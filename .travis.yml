@@ -1,0 +1,15 @@
+dist: xenial
+language: node_js
+
+branches:
+    except:
+        - /^v[0-9]/
+
+before_install:
+    - npm i -g npm
+
+install:
+    - npm i
+
+script:
+    - NODE_ENV=production npm run build

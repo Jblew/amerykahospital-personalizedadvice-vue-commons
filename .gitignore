@@ -1,2 +1,7 @@
+.DS_Store
 /dist
 /node_modules
+/serviceAccount.credentials.json
+/dist-public
+/.firebase
+firebase-debug.log
