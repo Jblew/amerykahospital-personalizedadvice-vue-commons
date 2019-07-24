@@ -22,18 +22,14 @@ export class FirebaseAuthHelper {
         await firebase.auth().signOut();
     }
 
-    public static getSignInProviders(): string[] {
-        return [/*firebase.auth.GoogleAuthProvider.PROVIDER_ID,*/ firebase.auth.EmailAuthProvider.PROVIDER_ID];
-    }
-
     public static doAuth(): firebase.auth.Auth {
         return firebase.auth();
     }
 
-    public static startFirebaseAuthUI(id: string, signInSuccessfulUrl: string) {
+    public static startFirebaseAuthUI(id: string, signInSuccessfulUrl: string, signInProviders: string []) {
         const uiConfig = {
             signInSuccessUrl: signInSuccessfulUrl,
-            signInOptions: FirebaseAuthHelper.getSignInProviders(),
+            signInOptions: signInProviders,
         };
         FirebaseAuthHelper.UI_INSTANCE =
             FirebaseAuthHelper.UI_INSTANCE || new firebaseui.auth.AuthUI(FirebaseAuthHelper.doAuth());
