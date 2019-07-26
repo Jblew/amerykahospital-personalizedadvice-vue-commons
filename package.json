@@ -16,9 +16,9 @@
         "semantic-release": "semantic-release"
     },
     "dependencies": {
-        "amerykahospital-personalizedadvice-core": "^2.0.0",
-        "firebase": "^6.3.0",
-        "firebaseui": "^4.0.0",
+        "amerykahospital-personalizedadvice-core": "^6.5.0",
+        "firebase": "^6.3.3",
+        "firebaseui": "^4.1.0",
         "ow": "^0.13.2"
     },
     "devDependencies": {
