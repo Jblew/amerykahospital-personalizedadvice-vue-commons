@@ -26,7 +26,7 @@ export class FirebaseAuthHelper {
         return firebase.auth();
     }
 
-    public static startFirebaseAuthUI(id: string, signInSuccessfulUrl: string, signInProviders: string []) {
+    public static startFirebaseAuthUI(id: string, signInSuccessfulUrl: string, signInProviders: string[]) {
         const uiConfig = {
             signInSuccessUrl: signInSuccessfulUrl,
             signInOptions: signInProviders,
